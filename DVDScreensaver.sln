@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DVDScreensaver", "DVDScreensaver\DVDScreensaver.csproj", "{A79796C5-9844-4119-857A-B701486880DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A79796C5-9844-4119-857A-B701486880DA}.Debug|x86.ActiveCfg = Debug|x86
+		{A79796C5-9844-4119-857A-B701486880DA}.Debug|x86.Build.0 = Debug|x86
+		{A79796C5-9844-4119-857A-B701486880DA}.Release|x86.ActiveCfg = Release|x86
+		{A79796C5-9844-4119-857A-B701486880DA}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {28DB864E-3792-4FE8-B7E5-990907A145EC}
+	EndGlobalSection
+EndGlobal
