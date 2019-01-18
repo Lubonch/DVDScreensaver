@@ -13,7 +13,7 @@ namespace DVDSreensaver
         Vector2 logoPosition = Vector2.Zero;
         Vector2 logoSpeed = new Vector2(150,150);
         Color logoColor = Color.White;
-
+        
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -44,13 +44,21 @@ namespace DVDSreensaver
        
         protected override void Update(GameTime gameTime)
         {
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
+            KeyboardState ks = Keyboard.GetState();
+            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || ks.IsKeyDown(Keys.Escape))
                 Exit();
 
             logoPosition += logoSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
 
             int MaxX = GraphicsDevice.Viewport.Width - logo.Width;
             int MaxY = GraphicsDevice.Viewport.Height - logo.Height;
+
+            if (ks.IsKeyDown(Keys.F))
+            {
+                graphics.PreferredBackBufferWidth = 1024;
+                graphics.PreferredBackBufferHeight = 786;
+                graphics.ToggleFullScreen();
+            }
 
             if (logoPosition.X > MaxX || logoPosition.X < 0)
             { 
